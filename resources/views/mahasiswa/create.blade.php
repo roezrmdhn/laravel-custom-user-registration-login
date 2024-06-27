@@ -17,7 +17,7 @@
                         <div class="form-group">
                             <label for="nim">NIM:</label>
                             <input type="text" name="nim" class="form-control" id="nim"
-                                value="{{ old('nim') }}">
+                                value="{{ old('nim') }}" placeholder="Masukan NIM">
                             @if ($errors->has('nim'))
                                 <div class="text-danger">
                                     {{ $errors->first('nim') }}
@@ -28,7 +28,7 @@
                         <div class="form-group">
                             <label for="nama">Nama:</label>
                             <input type="text" name="nama" class="form-control" id="nama"
-                                value="{{ old('nama') }}">
+                                value="{{ old('nama') }}" placeholder="Masukan Nama">
                             @if ($errors->has('nama'))
                                 <div class="text-danger">
                                     {{ $errors->first('nama') }}

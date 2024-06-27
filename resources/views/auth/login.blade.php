@@ -18,7 +18,8 @@
                                 Address</label>
                             <div class="col-md-6">
                                 <input type="email" class="form-control @error('email') is-invalid @enderror"
-                                    id="email" name="email" value="{{ old('email') }}">
+                                    id="email" name="email" value="{{ old('email') }}" placeholder="Masukan Email"
+                                    required>
                                 @if ($errors->has('email'))
                                     <span class="text-danger">{{ $errors->first('email') }}</span>
                                 @endif
@@ -28,7 +29,7 @@
                             <label for="password" class="col-md-4 col-form-label text-md-end text-start">Password</label>
                             <div class="col-md-6">
                                 <input type="password" class="form-control @error('password') is-invalid @enderror"
-                                    id="password" name="password">
+                                    id="password" name="password" placeholder="Masukan Password">
                                 @if ($errors->has('password'))
                                     <span class="text-danger">{{ $errors->first('password') }}</span>
                                 @endif
